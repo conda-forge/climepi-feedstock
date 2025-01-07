@@ -1,0 +1,69 @@
+context:
+  name: climepi
+  version: 0.1.0
+  python_min: 3.10
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://github.com/idm-oxford/climate-epidemics/archive/v${{ version }}.tar.gz
+  sha256: f90af6d8000e8087d6f240cde1a007de6c222eaa86eee6bc602b337c976d63c2
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ==${{ python_min }}
+    - setuptools >=61.0
+    - versioneer ==0.29
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - bottleneck
+    - dask >=2024.11.2
+    - datashader
+    - flox
+    - geopy
+    - geoviews
+    - hvplot
+    - intake
+    - intake-esm
+    - nc-time-axis
+    - numpy
+    - pandas
+    - panel
+    - param
+    - pooch
+    - requests
+    - s3fs
+    - urllib3
+    - xarray !=2024.10.0
+    - xcdat
+
+tests:
+  - python:
+      imports:
+        - climepi
+        - climepi.climdata
+        - climepi.epimod
+        - climepi.app
+      pip_check: false
+      python_version:
+        - ${{ python_min }}
+
+about:
+  summary: Combining climate data and epidemiological models
+  license: GPL-3.0-or-later
+  license_file: LICENSE
+  homepage: https://idm-oxford.github.io/climate-epidemics
+  repository: https://github.com/idm-oxford/climate-epidemics
+  documentation: https://climate-epidemics.readthedocs.io/en/latest/
+
+extra:
+  recipe-maintainers:
+    - will-s-hart
