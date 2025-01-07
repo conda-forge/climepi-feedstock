@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/will-s-hart/climate-epidemics/archive/v{{ version }}.tar.gz
+  url: https://github.com/idm-oxford/climate-epidemics/archive/v{{ version }}.tar.gz
   sha256: 306bf6db259f0623b52f9697e12416615137d51ad26fdf1241d8397f5d6fab3f
 
 build:
@@ -55,12 +55,12 @@ test:
     - climepi.app
 
 about:
-  home: https://will-s-hart.github.io/climate-epidemics
+  home: https://idm-oxford.github.io/climate-epidemics
   summary: Combining climate data and epidemiological models
   license: GPL-3.0-or-later
   license_file: LICENSE
   doc_url: https://climate-epidemics.readthedocs.io/en/latest/
-  dev_url: https://github.com/will-s-hart/climate-epidemics
+  dev_url: https://github.com/idm-oxford/climate-epidemics
 
 extra:
   recipe-maintainers:
