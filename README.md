@@ -3,13 +3,13 @@ About climepi-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/climepi-feedstock/blob/main/LICENSE.txt)
 
-Home: https://will-s-hart.github.io/climate-epidemics
+Home: https://idm-oxford.github.io/climate-epidemics
 
 Package license: GPL-3.0-or-later
 
 Summary: Combining climate data and epidemiological models
 
-Development: https://github.com/will-s-hart/climate-epidemics
+Development: https://github.com/idm-oxford/climate-epidemics
 
 Documentation: https://climate-epidemics.readthedocs.io/en/latest/
 
