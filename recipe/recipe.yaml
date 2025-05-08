@@ -1,6 +1,6 @@
 context:
   name: climepi
-  version: "0.4.1"
+  version: "0.5.2"
   python_min: '3.10'
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/idm-oxford/climate-epidemics/archive/v${{ version }}.tar.gz
-  sha256: 2ca0945a46bd216dd4a5ddbb07e407553ecc42c1238e47ba4e1ba35fc141f95a
+  sha256: aa02ed830bb3cfb40d021b4ca57f914b6242547046e4ef223197147371c0712a
 
 build:
   number: 0
@@ -41,6 +41,7 @@ requirements:
     - pooch
     - requests
     - s3fs
+    - scipy
     - urllib3
     - xarray !=2024.10.0
     - xcdat
@@ -53,7 +54,7 @@ tests:
         - climepi.epimod
         - climepi.app
       pip_check: false
-      python_version: ${{ python_min }}
+      python_version: "${{ python_min }}.*"
 
 about:
   summary: Combining climate data and epidemiological models
