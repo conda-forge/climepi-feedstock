@@ -54,7 +54,7 @@ tests:
         - climepi.epimod
         - climepi.app
       pip_check: false
-      python_version: ==${{ python_min }}
+      python_version: "${{ python_min }}.*"
 
 about:
   summary: Combining climate data and epidemiological models
