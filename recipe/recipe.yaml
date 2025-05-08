@@ -1,6 +1,6 @@
 context:
   name: climepi
-  version: "0.5.1"
+  version: "0.5.2"
   python_min: '3.10'
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/idm-oxford/climate-epidemics/archive/v${{ version }}.tar.gz
-  sha256: 85cf9f1ec19f40c8a8ed1320b3dba13e48d6f9df8e38bd5dc9b3831a219de901
+  sha256: aa02ed830bb3cfb40d021b4ca57f914b6242547046e4ef223197147371c0712a
 
 build:
   number: 0
