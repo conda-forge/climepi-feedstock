@@ -60,7 +60,7 @@ about:
   summary: Combining climate data and epidemiological models
   license: GPL-3.0-or-later
   license_file: LICENSE
-  homepage: https://idm-oxford.github.io/climate-epidemics
+  homepage: https://github.com/idm-oxford/climate-epidemics
   repository: https://github.com/idm-oxford/climate-epidemics
   documentation: https://climate-epidemics.readthedocs.io/en/latest/
 
