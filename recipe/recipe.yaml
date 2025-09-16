@@ -1,6 +1,6 @@
 context:
   name: climepi
-  version: "0.5.3"
+  version: "0.6.0"
   python_min: '3.10'
 
 package:
@@ -24,26 +24,33 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
+    - arviz
     - bottleneck
-    - dask >=2024.11.2
+    - dask
     - datashader
     - flox
     - geopy
     - geoviews
+    - h5netcdf
     - hvplot
     - intake
     - intake-esm
+    - kerchunk >=0.2.9
     - nc-time-axis
     - numpy
     - pandas
     - panel
     - param
     - pooch
+    - pydantic
+    - pymc
     - requests
-    - s3fs
+    - s3fs >=2021.4
     - scipy
+    - siphon
+    - tqdm
     - urllib3
-    - xarray !=2024.10.0
+    - xarray !=2025.7
     - xcdat
 
 tests:
