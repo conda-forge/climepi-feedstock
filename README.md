@@ -3,7 +3,7 @@ About climepi-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/climepi-feedstock/blob/main/LICENSE.txt)
 
-Home: https://idm-oxford.github.io/climate-epidemics
+Home: https://github.com/idm-oxford/climate-epidemics
 
 Package license: GPL-3.0-or-later
 
