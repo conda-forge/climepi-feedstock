@@ -14,14 +14,13 @@ source:
 build:
   number: 0
   noarch: python
-  script: |
-    python -m pip install 'version-pioneer>=0.0.14' -v --no-deps
-    python -m pip install . -vv --no-deps --no-build-isolation
+  script: python -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - python ==${{ python_min }}
     - hatchling >=1.28
+    - version-pioneer >=0.0.14
     - pip
   run:
     - python >=${{ python_min }}
