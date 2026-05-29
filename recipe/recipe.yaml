@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/idm-oxford/climate-epidemics/archive/v${{ version }}.tar.gz
-  sha256: ca27bb8346c5958b60ce96f7c0a09d08c98577d040a9d761cc57e4fae3096ae1
+  sha256: dd7dd46c3254d41b9105dec6c8cca6b963a572f01ec2b85ed67e4f29d3b84a3d
 
 build:
   number: 0
