@@ -1,6 +1,6 @@
 context:
   name: climepi
-  version: "0.6.6"
+  version: "0.6.7"
   python_min: '3.11'
 
 package:
@@ -12,7 +12,7 @@ source:
   sha256: ca27bb8346c5958b60ce96f7c0a09d08c98577d040a9d761cc57e4fae3096ae1
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python -m pip install . -vv --no-deps --no-build-isolation
 
@@ -39,7 +39,7 @@ requirements:
     - nc-time-axis
     - numpy
     - pandas
-    - panel
+    - panel >=1.9.0
     - param
     - pooch
     - pydantic
