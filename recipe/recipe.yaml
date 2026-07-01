@@ -1,7 +1,7 @@
 context:
   name: climepi
-  version: "0.6.7"
-  python_min: '3.11'
+  version: "0.6.8"
+  python_min: '3.12'
 
 package:
   name: ${{ name|lower }}
@@ -53,6 +53,7 @@ requirements:
     - urllib3
     - xarray !=2025.7
     - xcdat
+  run_constraints:
     - regionmask >=0.11
 
 tests:
